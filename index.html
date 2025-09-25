@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
+
+    <!-- 模型名称 -->    
     <title>From Inpainting to Editing: A Self-Bootstrapping Paradigm for Context-Rich Visual Dubbing</title>
-    <meta content="From Inpainting to Editing: A Self-Bootstrapping Paradigm for Context-Rich Visual Dubbing" name="description" />
+
+    <meta name="referrer" content="no-referrer">
+
+    <meta content="Anonymous project page for visual dubbing submission." name="description" />
     <meta content="summary" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="static/css/template.css" rel="stylesheet" type="text/css" />
@@ -31,19 +36,10 @@
     <script type="text/javascript" src="static/js/zoom.js"></script>
     <script type="text/javascript" src="static/js/video_comparison.js"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLDP9MKGC8"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-MLDP9MKGC8');
-    </script>
 
     <link rel="stylesheet" href="./static/css/bulma.min.css">
     <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-    <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
     <link rel="stylesheet" href="./static/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
@@ -55,42 +51,192 @@
 <body>
 
     <div class="section hero nerf-_v2">
-        <div class="container-2 nerf_header_v2 w-container">
-            <h1 class="nerf_title_v2">
-                <span style="background: linear-gradient(to right,  rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                    X-Dub:
-                    </span>
-                    From Inpainting to Editing - A Self-Bootstrapping Paradigm for Context-Rich Visual Dubbing
-            </h1>
-        </div>
-        <!-- <div class="nerf_subheader_v2">Anonymous Authors</div> -->
-        <div class="nerf_subheader_v2">
-            <div class="external-link">
-                <a class="btn" href="https://X-Dub-Lab.github.io" role="button" target="_blank">
-                    <i class="ai ai-arxiv"></i> Paper Under Review </a>
+    <div class="container-2 nerf_header_v2 w-container" style="text-align:center;">
+
+        <!-- X-Dub -->
+        <h2 class="model_name" 
+            style="font-size:2.8rem; font-weight:900; line-height:1.2;
+                background: linear-gradient(175deg, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                margin-bottom:0.3em; padding:0.2em 0;">
+        X-Dub
+        </h2>
+
+        <!-- title -->
+        <h1 class="nerf_title_v2" style="line-height:1.3; font-size:2.2rem;">
+        From Inpainting to Editing:<br>
+        A Self-Bootstrapping Paradigm for Context-Rich Visual Dubbing
+        </h1>
+
+    </div>
+
+    <!-- Anonymous Authors -->
+    <div class="nerf_subheader_v2" style="text-align:center; margin-top:1em;">
+        ICLR 2026 Submission<br>
+        Anonymous Authors
+    </div>
+    </div>
+
+    <section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+            <video id="video1" controls playsinline>
+                <source src="assets/gallery-1.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video2">
+            <video id="video2" controls playsinline>
+                <source src="assets/gallery-2.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video3">
+            <video id="video3" controls playsinline>
+                <source src="assets/gallery-3.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video4">
+            <video id="video4" controls playsinline>
+                <source src="assets/gallery-4.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video5">
+            <video id="video5" controls playsinline>
+                <source src="assets/gallery-5.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video6">
+            <video id="video6" controls playsinline>
+                <source src="assets/gallery-6.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video7">
+            <video id="video7" controls playsinline>
+                <source src="assets/gallery-7.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video7">
+            <video id="video8" controls playsinline>
+                <source src="assets/gallery-8.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video7">
+            <video id="video9" controls playsinline>
+                <source src="assets/gallery-9.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video7">
+            <video id="video10" controls playsinline>
+                <source src="assets/gallery-10.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video7">
+            <video id="vide11" controls playsinline>
+                <source src="assets/gallery-11.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="item item-video7">
+            <video id="video12" controls playsinline>
+                <source src="assets/gallery-12.mp4" type="video/mp4">
+            </video>
             </div>
         </div>
+        </div>
+        <p class="myprompt comment_text">
+        Given a character video, <strong>X-Dub</strong> seamlessly edits lip movements to match new speech,
+        delivering precise lip-sync, faithful identity preservation, and robust performance in challenging scenarios like facial occlusions, 
+        across both photoreal and stylized characters.
+        </p>
     </div>
+    </section>
+
+    <style>
+    /* 固定视频高度，保持比例 */
+    .results-carousel video {
+        height: 600px;          /* 可根据需要调整 */
+        width: auto;
+        object-fit: contain;    /* 保持比例，不裁剪 */
+        display: block;
+        margin: 0 auto;
+    }
+    </style>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const videos = document.querySelectorAll(".results-carousel video");
+
+        videos.forEach(video => {
+        // 播放一个时暂停其他
+        video.addEventListener("play", () => {
+            videos.forEach(other => {
+            if (other !== video) {
+                other.pause();
+            }
+            });
+        });
+
+        // 播放结束回到第一帧并保持暂停
+        video.addEventListener("ended", () => {
+            video.currentTime = 0;
+            video.pause();
+        });
+        });
+    });
+    </script>
+
+        
+        
 
     <div data-anchor="slide1" class="section nerf_section">
         <div class="w-container grey_container">
             <h2 class="grey-heading_nerf_abstract">Abstract</h2>
             <p class="paragraph-3 nerf_text nerf_results_text">
-              Audio-driven visual dubbing aims to synchronize the lip movements in a talking-head video with a new audio track. A central challenge is the absence of real-world paired training data—videos with identical identity and poses but different spoken content.
-              Existing methods circumvent this by adopting a self-reconstruction paradigm based on masked inpainting, but this yields an incomplete context that splits the model's focus between lip-sync and hallucinating missing content, leading to lip-sync degradation, visual artifacts, and identity drift.
-              In this work, we reframe visual dubbing from an under-specified inpainting task to a well-conditioned video-to-video editing problem, proposing a self-bootstrapping paradigm where a Diffusion Transformer (DiT) model generates its own ideal training data. 
-              The paradigm features a generator that creates a lip-altered companion video for each training sample, prioritizing identity and stability.
-              A subsequent editor then learns the dubbing using these context-rich paired videos as input, which provide stronger conditions than misaligned static reference frames.
-              To further enhance performance, we propose a timestep-adaptive multi-phase training strategy that aligns different diffusion stages with learning specific visual features, including structure, lips, and texture. 
-              We also introduce the benchmark for robust evaluation in complex, in-the-wild scenarios.
-              Experiments show our method achieves state-of-the-art performance, producing high-fidelity results across challenging scenarios.
+                Audio-driven visual dubbing aims to synchronize a video's lip movements with new speech, 
+                but is fundamentally challenged by the lack of real-world paired training data. 
+                Existing methods circumvent this with a mask-based inpainting paradigm, 
+                where incomplete context forces models to simultaneously hallucinate missing content (e.g., occlusions) and sync lips, 
+                leading to visual artifacts, identity drift, and poor synchronization. 
+                In this work, we propose a novel self-bootstrapping paradigm 
+                that reframes visual dubbing from an under-specified inpainting task into a well-conditioned video-to-video editing problem. 
+                Our proposed <strong>X-Dub</strong> utilizes a Diffusion Transformer to first generate its own ideal training data: a lip-altered companion video for each sample, 
+                forming a context-rich pair with the original. 
+                An editor is then trained on these pairs, leveraging the complete and aligned video context to focus solely on precise, audio-driven lip modifications. 
+                This context-rich conditioning allows our method to achieve state-of-the-art performance, 
+                yielding highly accurate lip sync, faithful identity preservation, and exceptional robustness against challenging in-the-wild scenarios like occlusions and dynamic lighting. 
+                We further introduce a timestep-adaptive multi-phase learning strategy that aligns diffusion stages with visual hierarchies, 
+                significantly enhancing contextual learning and dubbing quality. 
+                Additionally, we propose ContextDubBench, a comprehensive benchmark dataset for robust evaluation in diverse and challenging practical application scenarios. 
+                Code will be released soon to benefit the community.
+                <br>
             </p>
         </div>
     </div>
 
+    <div class="white_section_nerf  w-container">
+        <h2 class="grey-heading_nerf">Method Overview</h2>
+        <div class="grid-container-1">
+            <img src="assets/pipeline.png">
+            <p style="font-size: 15px;font-family: Ubuntu; text-align: justify;">
+                <strong>X-Dub</strong> is a context-rich dubbing framework that builds on a self-bootstrapping paradigm.
+                At its core, it first employs a DiT <em>generator</em> to create a lip-altered counterpart for each video, forming a context-rich pair with the original (left). 
+                A DiT <em>editor</em> then learns mask-free, video-to-video dubbing directly from these ideal pairs, 
+                leveraging the complete visual context to ensure accurate lip sync and identity preservation (middle).
+                This contextual learning is further refined by our timestep-adaptive multi-phase learning (right), 
+                which aligns different diffusion stages with learning distinct information: global structure, lip movements, and texture details, respectively.
+            </p>
+        </div>
+    </div>
+    
+
+
 </body>
 <footer>
-    Please read the submitted paper for more technical details.</a>
+    This project page template is inspired by <a href="https://sweetdreamer3d.github.io/">SweetDreamer.</a>
 </footer>
 
 </html>
