@@ -134,6 +134,14 @@
             color: #333;
         }
 
+        .section-title-small {
+            font-size: 2.0rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            text-align: center;
+            color: #333;
+        }
+
         .section-subtitle {
             font-size: 1.8rem;
             font-weight: 500;
@@ -638,8 +646,8 @@
             
             <!-- ==================== NEW SECTION: HDTF Results (Reviewer LNYW) ==================== -->
             <div class="section">
-                <h2 class="section-title">Qualitative Results on the HDTF dataset<br>
-                    <span style="font-size: 0.6em; font-weight: 400; color: #666;">(Rebuttal to Reviewer LNYW)</span>
+                <h2 class="section-title-small">Qualitative Results on the HDTF dataset<br>
+                    <span style="font-size: 0.6em; font-weight: 400; color: #666;">(Response to Reviewer LNYW)</span>
                 </h2>
                 
                 <!-- Sample 1: 一行一个，宽度拉满 -->
@@ -678,8 +686,8 @@
 
             <!-- ==================== NEW SECTION: Long Video (Reviewer h2PZ) ==================== -->
             <div class="section">
-                <h2 class="section-title">Long Video Generation<br>
-                    <span style="font-size: 0.6em; font-weight: 400; color: #666;">(Rebuttal to Reviewer h2PZ)</span>
+                <h2 class="section-title-small">Long Video Generation<br>
+                    <span style="font-size: 0.6em; font-weight: 400; color: #666;">(Response to Reviewer h2PZ)</span>
                 </h2>
                 
                 <!-- 翻译后的解释文本 -->
@@ -687,13 +695,36 @@
                     Our editor demonstrates the capability to generate extended lip-sync videos (exceeding 1 min) while maintaining consistency, with no observable color or identity drift between the initial and final frames.
                 </p>
 
-                <!-- 竖屏视频容器 -->
+                <!-- 横屏视频容器 -->
                 <div class="main-video">
-                    <!-- style="max-width: 360px" 限制宽度，防止竖屏视频占满全屏变得巨大 -->
-                    <!-- style="max-height: 640px" 限制高度，确保在笔记本屏幕上也能完整显示 -->
+                    <!-- width: 80% 设置宽度占比 -->
+                    <!-- height: auto 保持宽高比 -->
+                    <!-- display: block; margin: 0 auto; 用于让视频在容器内水平居中 -->
                     <video controls preload="metadata" 
-                           style="max-width: 360px; width: 100%; border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);">
+                        style="width: 80%; max-width: 1200px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);">
                         <source src="./video/long_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- ==================== NEW SECTION: Compression Noise (Reviewer h2PZ) ==================== -->
+            <div class="section">
+                <h2 class="section-title-small">Robustness to Compression Noise<br>
+                    <span style="font-size: 0.6em; font-weight: 400; color: #666;">(Response to Reviewer h2PZ)</span>
+                </h2>
+                
+                <p class="narrow-left" style="text-align: center; max-width: 800px; margin: 0 auto 30px auto; color: #555;">
+                    Despite severe compression noise in the input video, our method robustly achieves precise lip synchronization.
+                </p>
+
+                <div class="main-video">
+                    <!-- width: 80% 设置宽度占比 -->
+                    <!-- height: auto 保持宽高比 -->
+                    <!-- display: block; margin: 0 auto; 用于让视频在容器内水平居中 -->
+                    <video controls preload="metadata" 
+                        style="width: 80%; max-width: 1200px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);">
+                        <source src="./video/noise_video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
